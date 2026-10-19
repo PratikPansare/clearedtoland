@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cleared to Land: VR air traffic control for Meta Quest</title>
+  <meta name="description" content="Draw flight paths on a tabletop airport, and watch real planes outside your control tower follow every line. A VR game for Meta Quest 3 and 3S.">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/icon.png" alt="">
+    <div class="title">CLEARED <span>TO</span> LAND</div>
+    <nav>
+      <a href="#support">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <img class="banner" src="images/banner.png" alt="Cleared to Land: a glowing tabletop airport inside a control tower at night">
+
+    <h1>Cleared to Land</h1>
+    <p class="tagline">What happens on the table happens in the sky.</p>
+
+    <p>You're the air traffic controller in a glass tower high above the airport. In front of you sits a living tabletop model of the airfield. Reach in, grab an arriving aircraft and draw its flight path through the air with your controller. Then look up: outside your windows, the full-size airliner banks along the exact line you drew, all the way down to the runway.</p>
+    <p>Get it right and they touch down safely. Get it wrong and two tiny planes collide on your table while a fireball lights up the sky outside.</p>
+
+    <div class="shots">
+      <img src="images/shot1.png" alt="The tabletop airport and the night city skyline from inside the tower">
+      <img src="images/shot2.png" alt="An airliner banking towards the runway in a mountain valley at dawn">
+      <img src="images/shot3.png" alt="A green flight path drawn onto the runway on the tabletop">
+    </div>
+
+    <div class="card">
+      <h2>Features</h2>
+      <ul>
+        <li><b>Draw in 3D.</b> Paths have altitude: climb one jet over another, line a business jet up with its runway, drop a helicopter onto its pad.</li>
+        <li><b>Two worlds, one airport.</b> Everything on the table happens at full scale outside your tower, at the same moment.</li>
+        <li><b>Six airfields, six times of day</b>, from a morning countryside strip to a dusk metropolis with crossing runways.</li>
+        <li><b>Career and Survival modes</b>, with global leaderboards for every airfield.</li>
+        <li><b>A hands-on tutorial</b> that walks you through every move.</li>
+        <li><b>Comfortable</b> to play seated or standing.</li>
+      </ul>
+      <p class="muted">For Meta Quest 3 and Meta Quest 3S. Touch controllers required.</p>
+    </div>
+
+    <div class="card" id="support">
+      <h2>Support</h2>
+      <p>Found a bug, or need help? Use the <a class="contact" href="#support" data-subject="Cleared to Land support">email support</a> link and include your headset model and, if it's about leaderboards, your pilot callsign.</p>
+      <p>To delete your leaderboard entries, see the <a href="privacy.html#choices">privacy policy</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Pratik Pansare · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
+  <script>
+    // Builds the contact address in the browser so it never appears whole in the page source.
+    (function () {
+      var u = "0002kitarpp".split("").reverse().join("");
+      var d = "moc.liamg".split("").reverse().join("");
+      document.querySelectorAll("a.contact").forEach(function (a) {
+        a.href = "mailto:" + u + "@" + d + "?subject=" + encodeURIComponent(a.dataset.subject || "Cleared to Land");
+      });
+    })();
+  </script>
+</body>
+</html>
