@@ -34,6 +34,18 @@ main { max-width: 960px; margin: 0 auto; padding: 0 16px 48px; }
 h1, h2 { letter-spacing: 0.04em; }
 h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin: 28px 0 4px; }
 .tagline { color: var(--cyan); margin: 0 0 20px; font-size: 1.1rem; }
+.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin: 0 0 24px; }
+.button {
+  display: inline-block;
+  background: var(--cyan);
+  color: var(--bg);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+.button:hover { background: var(--text); }
 .card {
   background: var(--panel);
   border-radius: 10px;
